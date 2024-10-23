@@ -1,0 +1,294 @@
+# 目录结构
+.
+├── Dockerfile
+├── docker-compose.yml
+├── requirements.txt
+├── protos
+│   └── url_analyzer.proto
+├── src
+│   ├── __init__.py
+│   ├── server.py
+│   ├── client.py
+│   └── analyzer.py
+└── README.md
+
+# protos/url_analyzer.proto
+syntax = "proto3";
+
+package url_analyzer;
+
+// URL分析服务定义
+service URLAnalyzer {
+    // 分析单个URL
+    rpc AnalyzeURL (URLRequest) returns (URLAnalysisResponse) {}
+    
+    // 批量分析URLs
+    rpc AnalyzeURLsBatch (URLBatchRequest) returns (URLBatchResponse) {}
+    
+    // 服务健康检查
+    rpc HealthCheck (HealthCheckRequest) returns (HealthCheckResponse) {}
+}
+
+// 单个URL请求
+message URLRequest {
+    string url = 1;
+    optional int32 timeout = 2;
+}
+
+// URL分析响应
+message URLAnalysisResponse {
+    string original_url = 1;
+    string minimal_url = 2;
+    repeated string required_params = 3;
+    string status = 4;
+    optional string error_message = 5;
+    map<string, string> all_params = 6;
+}
+
+// 批量请求
+message URLBatchRequest {
+    repeated string urls = 1;
+    optional int32 timeout = 2;
+}
+
+// 批量响应
+message URLBatchResponse {
+    repeated URLAnalysisResponse results = 1;
+}
+
+// 健康检查请求
+message HealthCheckRequest {}
+
+// 健康检查响应
+message HealthCheckResponse {
+    string status = 1;
+    string version = 2;
+}
+
+# src/server.py
+import asyncio
+import grpc
+from concurrent import futures
+import logging
+from analyzer import URLAnalyzerService
+import url_analyzer_pb2
+import url_analyzer_pb2_grpc
+
+class URLAnalyzerServicer(url_analyzer_pb2_grpc.URLAnalyzerServicer):
+    def __init__(self):
+        self.analyzer = URLAnalyzerService()
+
+    async def AnalyzeURL(self, request, context):
+        try:
+            result = await self.analyzer.find_minimal_url(request.url)
+            return url_analyzer_pb2.URLAnalysisResponse(
+                original_url=result.original_url,
+                minimal_url=result.minimal_url,
+                required_params=result.required_params,
+                status=result.status,
+                error_message=result.error_message if result.error_message else None,
+                all_params=result.all_params
+            )
+        except Exception as e:
+            await context.abort(grpc.StatusCode.INTERNAL, str(e))
+
+    async def AnalyzeURLsBatch(self, request, context):
+        try:
+            tasks = [self.analyzer.find_minimal_url(url) for url in request.urls]
+            results = await asyncio.gather(*tasks)
+            
+            return url_analyzer_pb2.URLBatchResponse(
+                results=[
+                    url_analyzer_pb2.URLAnalysisResponse(
+                        original_url=r.original_url,
+                        minimal_url=r.minimal_url,
+                        required_params=r.required_params,
+                        status=r.status,
+                        error_message=r.error_message if r.error_message else None,
+                        all_params=r.all_params
+                    ) for r in results
+                ]
+            )
+        except Exception as e:
+            await context.abort(grpc.StatusCode.INTERNAL, str(e))
+
+    async def HealthCheck(self, request, context):
+        return url_analyzer_pb2.HealthCheckResponse(
+            status="healthy",
+            version="1.0.0"
+        )
+
+async def serve():
+    server = grpc.aio.server(futures.ThreadPoolExecutor(max_workers=10))
+    url_analyzer_pb2_grpc.add_URLAnalyzerServicer_to_server(
+        URLAnalyzerServicer(), server
+    )
+    listen_addr = '[::]:50051'
+    server.add_insecure_port(listen_addr)
+    logging.info("Starting server on %s", listen_addr)
+    await server.start()
+    await server.wait_for_termination()
+
+if __name__ == '__main__':
+    logging.basicConfig(level=logging.INFO)
+    asyncio.run(serve())
+
+# src/client.py
+import asyncio
+import grpc
+import url_analyzer_pb2
+import url_analyzer_pb2_grpc
+from typing import List, Optional
+
+class URLAnalyzerClient:
+    def __init__(self, host: str = 'localhost', port: int = 50051):
+        self.channel = grpc.aio.insecure_channel(f'{host}:{port}')
+        self.stub = url_analyzer_pb2_grpc.URLAnalyzerStub(self.channel)
+
+    async def analyze_url(self, url: str, timeout: Optional[int] = None) -> dict:
+        request = url_analyzer_pb2.URLRequest(url=url, timeout=timeout)
+        response = await self.stub.AnalyzeURL(request)
+        return {
+            'original_url': response.original_url,
+            'minimal_url': response.minimal_url,
+            'required_params': list(response.required_params),
+            'status': response.status,
+            'error_message': response.error_message,
+            'all_params': dict(response.all_params)
+        }
+
+    async def analyze_urls_batch(self, urls: List[str], timeout: Optional[int] = None) -> List[dict]:
+        request = url_analyzer_pb2.URLBatchRequest(urls=urls, timeout=timeout)
+        response = await self.stub.AnalyzeURLsBatch(request)
+        return [{
+            'original_url': r.original_url,
+            'minimal_url': r.minimal_url,
+            'required_params': list(r.required_params),
+            'status': r.status,
+            'error_message': r.error_message,
+            'all_params': dict(r.all_params)
+        } for r in response.results]
+
+    async def health_check(self) -> dict:
+        request = url_analyzer_pb2.HealthCheckRequest()
+        response = await self.stub.HealthCheck(request)
+        return {
+            'status': response.status,
+            'version': response.version
+        }
+
+    async def close(self):
+        await self.channel.close()
+
+# 客户端使用示例
+async def main():
+    client = URLAnalyzerClient()
+    
+    # 分析单个URL
+    result = await client.analyze_url("https://example.com/page?id=123&utm_source=google")
+    print("Single URL analysis result:", result)
+    
+    # 批量分析URLs
+    results = await client.analyze_urls_batch([
+        "https://example.com/1?a=1",
+        "https://example.com/2?b=2"
+    ])
+    print("Batch analysis results:", results)
+    
+    # 健康检查
+    health = await client.health_check()
+    print("Health check:", health)
+    
+    await client.close()
+
+if __name__ == "__main__":
+    asyncio.run(main())
+
+# requirements.txt
+grpcio==1.59.0
+grpcio-tools==1.59.0
+playwright==1.39.0
+protobuf==4.24.4
+python-dotenv==1.0.0
+
+# Dockerfile
+FROM mcr.microsoft.com/playwright/python:latest
+
+WORKDIR /app
+
+# 安装依赖
+COPY requirements.txt .
+RUN pip install -r requirements.txt
+
+# 复制proto文件并生成gRPC代码
+COPY protos/ protos/
+RUN python -m grpc_tools.protoc \
+    -I protos \
+    --python_out=src \
+    --grpc_python_out=src \
+    protos/url_analyzer.proto
+
+# 复制源代码
+COPY src/ src/
+
+# 设置环境变量
+ENV PYTHONPATH=/app/src
+
+# 暴露gRPC端口
+EXPOSE 50051
+
+# 启动服务
+CMD ["python", "src/server.py"]
+
+# docker-compose.yml
+version: '3.8'
+services:
+  url-analyzer:
+    build: .
+    ports:
+      - "50051:50051"
+    environment:
+      - TIMEOUT=30000
+      - MAX_RETRIES=3
+      - CONCURRENT_LIMIT=5
+    volumes:
+      - ./src:/app/src
+    restart: unless-stopped
+
+# README.md
+# URL Analyzer gRPC Service
+
+gRPC-based service for analyzing URLs to find minimal required parameters.
+
+## Quick Start
+
+1. Build and run with Docker:
+```bash
+docker-compose up --build
+```
+
+2. Run client example:
+```bash
+python src/client.py
+```
+
+## Usage Examples
+
+```python
+# 创建客户端
+client = URLAnalyzerClient()
+
+# 分析单个URL
+result = await client.analyze_url(
+    "https://example.com/page?id=123&utm_source=google"
+)
+
+# 批量分析
+results = await client.analyze_urls_batch([
+    "https://example.com/1?a=1",
+    "https://example.com/2?b=2"
+])
+
+# 健康检查
+health = await client.health_check()
+```

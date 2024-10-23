@@ -1,0 +1,13 @@
+version: '3.8'
+services:
+  url-analyzer:
+    build: .
+    ports:
+      - "8000:8000"
+    environment:
+      - TIMEOUT=30000
+      - MAX_RETRIES=3
+      - CONCURRENT_LIMIT=5
+    volumes:
+      - ./app:/app
+    restart: unless-stopped
