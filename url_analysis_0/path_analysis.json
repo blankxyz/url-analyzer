@@ -1,0 +1,1356 @@
+{
+  "www.iesdouyin.com": {
+    "total_urls": 7890,
+    "unique_paths": 132,
+    "depth_distribution": {
+      "3": 7890
+    },
+    "avg_depth": 3.0
+  },
+  "blog.sina.cn": {
+    "total_urls": 7,
+    "unique_paths": 10,
+    "depth_distribution": {
+      "4": 7
+    },
+    "avg_depth": 4.0
+  },
+  "finance.sina.cn": {
+    "total_urls": 96,
+    "unique_paths": 114,
+    "depth_distribution": {
+      "2": 94,
+      "3": 2
+    },
+    "avg_depth": 2.0208333333333335
+  },
+  "k.sina.cn": {
+    "total_urls": 200,
+    "unique_paths": 200,
+    "depth_distribution": {
+      "1": 200
+    },
+    "avg_depth": 1.0
+  },
+  "hlj.sina.cn": {
+    "total_urls": 14,
+    "unique_paths": 39,
+    "depth_distribution": {
+      "4": 14
+    },
+    "avg_depth": 4.0
+  },
+  "tech.sina.cn": {
+    "total_urls": 1,
+    "unique_paths": 2,
+    "depth_distribution": {
+      "2": 1
+    },
+    "avg_depth": 2.0
+  },
+  "news.sina.cn": {
+    "total_urls": 5,
+    "unique_paths": 11,
+    "depth_distribution": {
+      "3": 4,
+      "2": 1
+    },
+    "avg_depth": 2.8
+  },
+  "m.weibo.cn": {
+    "total_urls": 175,
+    "unique_paths": 176,
+    "depth_distribution": {
+      "2": 175
+    },
+    "avg_depth": 2.0
+  },
+  "www.toutiao.com": {
+    "total_urls": 261,
+    "unique_paths": 264,
+    "depth_distribution": {
+      "1": 243,
+      "2": 18
+    },
+    "avg_depth": 1.0689655172413792
+  },
+  "www.qianlima.com": {
+    "total_urls": 1,
+    "unique_paths": 1,
+    "depth_distribution": {
+      "1": 1
+    },
+    "avg_depth": 1.0
+  },
+  "m.toutiaoimg.cn": {
+    "total_urls": 750,
+    "unique_paths": 14,
+    "depth_distribution": {
+      "2": 750
+    },
+    "avg_depth": 2.0
+  },
+  "jyj.jl.gov.cn": {
+    "total_urls": 1,
+    "unique_paths": 1,
+    "depth_distribution": {
+      "1": 1
+    },
+    "avg_depth": 1.0
+  },
+  "www.douyin.com": {
+    "total_urls": 58,
+    "unique_paths": 64,
+    "depth_distribution": {
+      "2": 58
+    },
+    "avg_depth": 2.0
+  },
+  "www.ribbonelec.com": {
+    "total_urls": 1,
+    "unique_paths": 4,
+    "depth_distribution": {
+      "4": 1
+    },
+    "avg_depth": 4.0
+  },
+  "haokan.baidu.com": {
+    "total_urls": 15,
+    "unique_paths": 1,
+    "depth_distribution": {
+      "1": 15
+    },
+    "avg_depth": 1.0
+  },
+  "ijzt.china9.cn": {
+    "total_urls": 1,
+    "unique_paths": 2,
+    "depth_distribution": {
+      "2": 1
+    },
+    "avg_depth": 2.0
+  },
+  "www.jiayuauto.cn": {
+    "total_urls": 1,
+    "unique_paths": 2,
+    "depth_distribution": {
+      "2": 1
+    },
+    "avg_depth": 2.0
+  },
+  "baijiahao.baidu.com": {
+    "total_urls": 38,
+    "unique_paths": 1,
+    "depth_distribution": {
+      "1": 38
+    },
+    "avg_depth": 1.0
+  },
+  "sd.china.com": {
+    "total_urls": 2,
+    "unique_paths": 9,
+    "depth_distribution": {
+      "5": 1,
+      "4": 1
+    },
+    "avg_depth": 4.5
+  },
+  "bbs.mala.cn": {
+    "total_urls": 1,
+    "unique_paths": 1,
+    "depth_distribution": {
+      "1": 1
+    },
+    "avg_depth": 1.0
+  },
+  "www.ixigua.com": {
+    "total_urls": 1,
+    "unique_paths": 1,
+    "depth_distribution": {
+      "1": 1
+    },
+    "avg_depth": 1.0
+  },
+  "jyj.hubei.gov.cn": {
+    "total_urls": 1,
+    "unique_paths": 0,
+    "depth_distribution": {
+      "0": 1
+    },
+    "avg_depth": 0.0
+  },
+  "video.sina.cn": {
+    "total_urls": 24,
+    "unique_paths": 9,
+    "depth_distribution": {
+      "3": 24
+    },
+    "avg_depth": 3.0
+  },
+  "www.stnn.cc": {
+    "total_urls": 2,
+    "unique_paths": 5,
+    "depth_distribution": {
+      "3": 2
+    },
+    "avg_depth": 3.0
+  },
+  "new.qq.com": {
+    "total_urls": 47,
+    "unique_paths": 48,
+    "depth_distribution": {
+      "3": 47
+    },
+    "avg_depth": 3.0
+  },
+  "m.gmw.cn": {
+    "total_urls": 11,
+    "unique_paths": 12,
+    "depth_distribution": {
+      "3": 11
+    },
+    "avg_depth": 3.0
+  },
+  "www.163.com": {
+    "total_urls": 47,
+    "unique_paths": 51,
+    "depth_distribution": {
+      "3": 47
+    },
+    "avg_depth": 3.0
+  },
+  "k.sina.com.cn": {
+    "total_urls": 7,
+    "unique_paths": 7,
+    "depth_distribution": {
+      "1": 7
+    },
+    "avg_depth": 1.0
+  },
+  "www.thepaper.cn": {
+    "total_urls": 2,
+    "unique_paths": 2,
+    "depth_distribution": {
+      "1": 2
+    },
+    "avg_depth": 1.0
+  },
+  "m.163.com": {
+    "total_urls": 7,
+    "unique_paths": 12,
+    "depth_distribution": {
+      "3": 7
+    },
+    "avg_depth": 3.0
+  },
+  "www.sohu.com": {
+    "total_urls": 18,
+    "unique_paths": 19,
+    "depth_distribution": {
+      "2": 18
+    },
+    "avg_depth": 2.0
+  },
+  "www.yunzaobao.com": {
+    "total_urls": 2,
+    "unique_paths": 3,
+    "depth_distribution": {
+      "3": 2
+    },
+    "avg_depth": 3.0
+  },
+  "cbgc.scol.com.cn": {
+    "total_urls": 1,
+    "unique_paths": 2,
+    "depth_distribution": {
+      "2": 1
+    },
+    "avg_depth": 2.0
+  },
+  "m.thepaper.cn": {
+    "total_urls": 5,
+    "unique_paths": 5,
+    "depth_distribution": {
+      "1": 5
+    },
+    "avg_depth": 1.0
+  },
+  "wap.xinmin.cn": {
+    "total_urls": 2,
+    "unique_paths": 3,
+    "depth_distribution": {
+      "2": 2
+    },
+    "avg_depth": 2.0
+  },
+  "news.sohu.com": {
+    "total_urls": 5,
+    "unique_paths": 4,
+    "depth_distribution": {
+      "2": 5
+    },
+    "avg_depth": 2.0
+  },
+  "api.app.anhuinews.com": {
+    "total_urls": 1,
+    "unique_paths": 2,
+    "depth_distribution": {
+      "2": 1
+    },
+    "avg_depth": 2.0
+  },
+  "cj.sina.com.cn": {
+    "total_urls": 7,
+    "unique_paths": 14,
+    "depth_distribution": {
+      "4": 7
+    },
+    "avg_depth": 4.0
+  },
+  "m.voc.com.cn": {
+    "total_urls": 2,
+    "unique_paths": 5,
+    "depth_distribution": {
+      "4": 2
+    },
+    "avg_depth": 4.0
+  },
+  "www.msn.com": {
+    "total_urls": 1,
+    "unique_paths": 5,
+    "depth_distribution": {
+      "5": 1
+    },
+    "avg_depth": 5.0
+  },
+  "share.hntv.tv": {
+    "total_urls": 2,
+    "unique_paths": 4,
+    "depth_distribution": {
+      "3": 2
+    },
+    "avg_depth": 3.0
+  },
+  "3g.china.com": {
+    "total_urls": 3,
+    "unique_paths": 7,
+    "depth_distribution": {
+      "5": 3
+    },
+    "avg_depth": 5.0
+  },
+  "browser.qq.com": {
+    "total_urls": 32,
+    "unique_paths": 2,
+    "depth_distribution": {
+      "2": 32
+    },
+    "avg_depth": 2.0
+  },
+  "view.inews.qq.com": {
+    "total_urls": 15,
+    "unique_paths": 17,
+    "depth_distribution": {
+      "2": 15
+    },
+    "avg_depth": 2.0
+  },
+  "sdxw.iqilu.com": {
+    "total_urls": 5,
+    "unique_paths": 8,
+    "depth_distribution": {
+      "2": 2,
+      "3": 3
+    },
+    "avg_depth": 2.6
+  },
+  "www.nihon-gyp.cn": {
+    "total_urls": 3,
+    "unique_paths": 4,
+    "depth_distribution": {
+      "2": 3
+    },
+    "avg_depth": 2.0
+  },
+  "m.mp.oeeee.com": {
+    "total_urls": 2,
+    "unique_paths": 4,
+    "depth_distribution": {
+      "2": 2
+    },
+    "avg_depth": 2.0
+  },
+  "music.163.com": {
+    "total_urls": 3,
+    "unique_paths": 1,
+    "depth_distribution": {
+      "1": 3
+    },
+    "avg_depth": 1.0
+  },
+  "v.ifeng.com": {
+    "total_urls": 3,
+    "unique_paths": 4,
+    "depth_distribution": {
+      "2": 3
+    },
+    "avg_depth": 2.0
+  },
+  "www.jfdaily.com": {
+    "total_urls": 2,
+    "unique_paths": 4,
+    "depth_distribution": {
+      "2": 2
+    },
+    "avg_depth": 2.0
+  },
+  "www.gzstv.com": {
+    "total_urls": 1,
+    "unique_paths": 2,
+    "depth_distribution": {
+      "2": 1
+    },
+    "avg_depth": 2.0
+  },
+  "mil.ifeng.com": {
+    "total_urls": 3,
+    "unique_paths": 4,
+    "depth_distribution": {
+      "2": 3
+    },
+    "avg_depth": 2.0
+  },
+  "jiu.ifeng.com": {
+    "total_urls": 3,
+    "unique_paths": 4,
+    "depth_distribution": {
+      "2": 3
+    },
+    "avg_depth": 2.0
+  },
+  "zj.ifeng.com": {
+    "total_urls": 3,
+    "unique_paths": 4,
+    "depth_distribution": {
+      "2": 3
+    },
+    "avg_depth": 2.0
+  },
+  "sn.ifeng.com": {
+    "total_urls": 3,
+    "unique_paths": 4,
+    "depth_distribution": {
+      "2": 3
+    },
+    "avg_depth": 2.0
+  },
+  "www.sclztv.com": {
+    "total_urls": 1,
+    "unique_paths": 2,
+    "depth_distribution": {
+      "2": 1
+    },
+    "avg_depth": 2.0
+  },
+  "i.ifeng.com": {
+    "total_urls": 3,
+    "unique_paths": 4,
+    "depth_distribution": {
+      "2": 3
+    },
+    "avg_depth": 2.0
+  },
+  "sd.ifeng.com": {
+    "total_urls": 3,
+    "unique_paths": 4,
+    "depth_distribution": {
+      "2": 3
+    },
+    "avg_depth": 2.0
+  },
+  "finance.ifeng.com": {
+    "total_urls": 2,
+    "unique_paths": 3,
+    "depth_distribution": {
+      "2": 2
+    },
+    "avg_depth": 2.0
+  },
+  "js.ifeng.com": {
+    "total_urls": 3,
+    "unique_paths": 4,
+    "depth_distribution": {
+      "2": 3
+    },
+    "avg_depth": 2.0
+  },
+  "pit.ifeng.com": {
+    "total_urls": 2,
+    "unique_paths": 3,
+    "depth_distribution": {
+      "2": 2
+    },
+    "avg_depth": 2.0
+  },
+  "foodnwine.ifeng.com": {
+    "total_urls": 1,
+    "unique_paths": 2,
+    "depth_distribution": {
+      "2": 1
+    },
+    "avg_depth": 2.0
+  },
+  "guoxue.ifeng.com": {
+    "total_urls": 2,
+    "unique_paths": 3,
+    "depth_distribution": {
+      "2": 2
+    },
+    "avg_depth": 2.0
+  },
+  "innovation.ifeng.com": {
+    "total_urls": 1,
+    "unique_paths": 2,
+    "depth_distribution": {
+      "2": 1
+    },
+    "avg_depth": 2.0
+  },
+  "www.sznews.com": {
+    "total_urls": 8,
+    "unique_paths": 13,
+    "depth_distribution": {
+      "6": 5,
+      "5": 3
+    },
+    "avg_depth": 5.625
+  },
+  "v-wb.youku.com": {
+    "total_urls": 1,
+    "unique_paths": 2,
+    "depth_distribution": {
+      "2": 1
+    },
+    "avg_depth": 2.0
+  },
+  "sz.ifeng.com": {
+    "total_urls": 3,
+    "unique_paths": 4,
+    "depth_distribution": {
+      "2": 3
+    },
+    "avg_depth": 2.0
+  },
+  "bang.ifeng.com": {
+    "total_urls": 2,
+    "unique_paths": 3,
+    "depth_distribution": {
+      "2": 2
+    },
+    "avg_depth": 2.0
+  },
+  "gd.ifeng.com": {
+    "total_urls": 2,
+    "unique_paths": 3,
+    "depth_distribution": {
+      "2": 2
+    },
+    "avg_depth": 2.0
+  },
+  "thirdpage.thepaper.cn": {
+    "total_urls": 1,
+    "unique_paths": 3,
+    "depth_distribution": {
+      "3": 1
+    },
+    "avg_depth": 3.0
+  },
+  "www.quzaobao.com": {
+    "total_urls": 6,
+    "unique_paths": 6,
+    "depth_distribution": {
+      "2": 4,
+      "4": 2
+    },
+    "avg_depth": 2.6666666666666665
+  },
+  "www.guancha.cn": {
+    "total_urls": 1,
+    "unique_paths": 2,
+    "depth_distribution": {
+      "2": 1
+    },
+    "avg_depth": 2.0
+  },
+  "www.yzaobao.com": {
+    "total_urls": 2,
+    "unique_paths": 3,
+    "depth_distribution": {
+      "3": 2
+    },
+    "avg_depth": 3.0
+  },
+  "www.aynews.net.cn": {
+    "total_urls": 1,
+    "unique_paths": 2,
+    "depth_distribution": {
+      "2": 1
+    },
+    "avg_depth": 2.0
+  },
+  "news.hnr.cn": {
+    "total_urls": 2,
+    "unique_paths": 8,
+    "depth_distribution": {
+      "4": 2
+    },
+    "avg_depth": 4.0
+  },
+  "item.btime.com": {
+    "total_urls": 1,
+    "unique_paths": 1,
+    "depth_distribution": {
+      "1": 1
+    },
+    "avg_depth": 1.0
+  },
+  "sichuan.scol.com.cn": {
+    "total_urls": 1,
+    "unique_paths": 3,
+    "depth_distribution": {
+      "3": 1
+    },
+    "avg_depth": 3.0
+  },
+  "hunan.ifeng.com": {
+    "total_urls": 1,
+    "unique_paths": 2,
+    "depth_distribution": {
+      "2": 1
+    },
+    "avg_depth": 2.0
+  },
+  "news.fznews.com.cn": {
+    "total_urls": 1,
+    "unique_paths": 3,
+    "depth_distribution": {
+      "3": 1
+    },
+    "avg_depth": 3.0
+  },
+  "health.ifeng.com": {
+    "total_urls": 3,
+    "unique_paths": 4,
+    "depth_distribution": {
+      "2": 3
+    },
+    "avg_depth": 2.0
+  },
+  "auto.ifeng.com": {
+    "total_urls": 3,
+    "unique_paths": 4,
+    "depth_distribution": {
+      "2": 3
+    },
+    "avg_depth": 2.0
+  },
+  "tech.ifeng.com": {
+    "total_urls": 3,
+    "unique_paths": 4,
+    "depth_distribution": {
+      "2": 3
+    },
+    "avg_depth": 2.0
+  },
+  "jx.ifeng.com": {
+    "total_urls": 3,
+    "unique_paths": 4,
+    "depth_distribution": {
+      "2": 3
+    },
+    "avg_depth": 2.0
+  },
+  "www.izongheng.net": {
+    "total_urls": 2,
+    "unique_paths": 5,
+    "depth_distribution": {
+      "3": 1,
+      "2": 1
+    },
+    "avg_depth": 2.5
+  },
+  "image.fznews.com.cn": {
+    "total_urls": 1,
+    "unique_paths": 5,
+    "depth_distribution": {
+      "5": 1
+    },
+    "avg_depth": 5.0
+  },
+  "news.xinmin.cn": {
+    "total_urls": 2,
+    "unique_paths": 4,
+    "depth_distribution": {
+      "4": 2
+    },
+    "avg_depth": 4.0
+  },
+  "edu.ifeng.com": {
+    "total_urls": 3,
+    "unique_paths": 4,
+    "depth_distribution": {
+      "2": 3
+    },
+    "avg_depth": 2.0
+  },
+  "h5.ifeng.com": {
+    "total_urls": 1,
+    "unique_paths": 3,
+    "depth_distribution": {
+      "3": 1
+    },
+    "avg_depth": 3.0
+  },
+  "www.bilibili.com": {
+    "total_urls": 2,
+    "unique_paths": 3,
+    "depth_distribution": {
+      "2": 2
+    },
+    "avg_depth": 2.0
+  },
+  "www.mhon.cn": {
+    "total_urls": 1,
+    "unique_paths": 2,
+    "depth_distribution": {
+      "2": 1
+    },
+    "avg_depth": 2.0
+  },
+  "m.sohu.com": {
+    "total_urls": 3,
+    "unique_paths": 4,
+    "depth_distribution": {
+      "2": 3
+    },
+    "avg_depth": 2.0
+  },
+  "baby.ifeng.com": {
+    "total_urls": 2,
+    "unique_paths": 3,
+    "depth_distribution": {
+      "2": 2
+    },
+    "avg_depth": 2.0
+  },
+  "www.t-d.tv": {
+    "total_urls": 1,
+    "unique_paths": 3,
+    "depth_distribution": {
+      "3": 1
+    },
+    "avg_depth": 3.0
+  },
+  "news.ifeng.com": {
+    "total_urls": 4,
+    "unique_paths": 5,
+    "depth_distribution": {
+      "2": 4
+    },
+    "avg_depth": 2.0
+  },
+  "ent.ifeng.com": {
+    "total_urls": 2,
+    "unique_paths": 3,
+    "depth_distribution": {
+      "2": 2
+    },
+    "avg_depth": 2.0
+  },
+  "cq.ifeng.com": {
+    "total_urls": 3,
+    "unique_paths": 4,
+    "depth_distribution": {
+      "2": 3
+    },
+    "avg_depth": 2.0
+  },
+  "hainan.ifeng.com": {
+    "total_urls": 1,
+    "unique_paths": 2,
+    "depth_distribution": {
+      "2": 1
+    },
+    "avg_depth": 2.0
+  },
+  "fo.ifeng.com": {
+    "total_urls": 2,
+    "unique_paths": 3,
+    "depth_distribution": {
+      "2": 2
+    },
+    "avg_depth": 2.0
+  },
+  "biz.ifeng.com": {
+    "total_urls": 2,
+    "unique_paths": 3,
+    "depth_distribution": {
+      "2": 2
+    },
+    "avg_depth": 2.0
+  },
+  "ishare.ifeng.com": {
+    "total_urls": 2,
+    "unique_paths": 4,
+    "depth_distribution": {
+      "2": 1,
+      "3": 1
+    },
+    "avg_depth": 2.5
+  },
+  "na.ifeng.com": {
+    "total_urls": 3,
+    "unique_paths": 4,
+    "depth_distribution": {
+      "2": 3
+    },
+    "avg_depth": 2.0
+  },
+  "qq78.com": {
+    "total_urls": 1,
+    "unique_paths": 0,
+    "depth_distribution": {
+      "0": 1
+    },
+    "avg_depth": 0.0
+  },
+  "feiliu.com": {
+    "total_urls": 1,
+    "unique_paths": 0,
+    "depth_distribution": {
+      "0": 1
+    },
+    "avg_depth": 0.0
+  },
+  "news.china.com": {
+    "total_urls": 5,
+    "unique_paths": 8,
+    "depth_distribution": {
+      "4": 5
+    },
+    "avg_depth": 4.0
+  },
+  "www.msn.cn": {
+    "total_urls": 1,
+    "unique_paths": 5,
+    "depth_distribution": {
+      "5": 1
+    },
+    "avg_depth": 5.0
+  },
+  "www.cqnews.net": {
+    "total_urls": 1,
+    "unique_paths": 5,
+    "depth_distribution": {
+      "5": 1
+    },
+    "avg_depth": 5.0
+  },
+  "export.shobserver.com": {
+    "total_urls": 1,
+    "unique_paths": 3,
+    "depth_distribution": {
+      "3": 1
+    },
+    "avg_depth": 3.0
+  },
+  "www.syfy.gov.cn": {
+    "total_urls": 1,
+    "unique_paths": 1,
+    "depth_distribution": {
+      "1": 1
+    },
+    "avg_depth": 1.0
+  },
+  "www.sydneytoday.com": {
+    "total_urls": 2,
+    "unique_paths": 2,
+    "depth_distribution": {
+      "1": 2
+    },
+    "avg_depth": 1.0
+  },
+  "www.jiemian.com": {
+    "total_urls": 1,
+    "unique_paths": 2,
+    "depth_distribution": {
+      "2": 1
+    },
+    "avg_depth": 2.0
+  },
+  "xueqiu.com": {
+    "total_urls": 2,
+    "unique_paths": 4,
+    "depth_distribution": {
+      "2": 2
+    },
+    "avg_depth": 2.0
+  },
+  "www.hunantoday.cn": {
+    "total_urls": 2,
+    "unique_paths": 5,
+    "depth_distribution": {
+      "4": 2
+    },
+    "avg_depth": 4.0
+  },
+  "www.thecover.cn": {
+    "total_urls": 1,
+    "unique_paths": 2,
+    "depth_distribution": {
+      "2": 1
+    },
+    "avg_depth": 2.0
+  },
+  "www.zhengguannews.cn": {
+    "total_urls": 1,
+    "unique_paths": 2,
+    "depth_distribution": {
+      "2": 1
+    },
+    "avg_depth": 2.0
+  },
+  "ah.ifeng.com": {
+    "total_urls": 3,
+    "unique_paths": 4,
+    "depth_distribution": {
+      "2": 3
+    },
+    "avg_depth": 2.0
+  },
+  "blog.fdbpx.cn": {
+    "total_urls": 1,
+    "unique_paths": 2,
+    "depth_distribution": {
+      "2": 1
+    },
+    "avg_depth": 2.0
+  },
+  "city.ifeng.com": {
+    "total_urls": 3,
+    "unique_paths": 4,
+    "depth_distribution": {
+      "2": 3
+    },
+    "avg_depth": 2.0
+  },
+  "www.hndnews.com": {
+    "total_urls": 1,
+    "unique_paths": 2,
+    "depth_distribution": {
+      "2": 1
+    },
+    "avg_depth": 2.0
+  },
+  "presents.ifeng.com": {
+    "total_urls": 2,
+    "unique_paths": 3,
+    "depth_distribution": {
+      "2": 2
+    },
+    "avg_depth": 2.0
+  },
+  "dz.dzng.com": {
+    "total_urls": 2,
+    "unique_paths": 4,
+    "depth_distribution": {
+      "3": 2
+    },
+    "avg_depth": 3.0
+  },
+  "finance.sina.com.cn": {
+    "total_urls": 4,
+    "unique_paths": 9,
+    "depth_distribution": {
+      "3": 4
+    },
+    "avg_depth": 3.0
+  },
+  "zm.sm-tc.cn": {
+    "total_urls": 1,
+    "unique_paths": 0,
+    "depth_distribution": {
+      "0": 1
+    },
+    "avg_depth": 0.0
+  },
+  "focus.scol.com.cn": {
+    "total_urls": 1,
+    "unique_paths": 3,
+    "depth_distribution": {
+      "3": 1
+    },
+    "avg_depth": 3.0
+  },
+  "news.hexun.com": {
+    "total_urls": 1,
+    "unique_paths": 2,
+    "depth_distribution": {
+      "2": 1
+    },
+    "avg_depth": 2.0
+  },
+  "www.ddcpc.cn": {
+    "total_urls": 1,
+    "unique_paths": 3,
+    "depth_distribution": {
+      "3": 1
+    },
+    "avg_depth": 3.0
+  },
+  "history.ifeng.com": {
+    "total_urls": 2,
+    "unique_paths": 3,
+    "depth_distribution": {
+      "2": 2
+    },
+    "avg_depth": 2.0
+  },
+  "www.chinaqi.net": {
+    "total_urls": 1,
+    "unique_paths": 5,
+    "depth_distribution": {
+      "5": 1
+    },
+    "avg_depth": 5.0
+  },
+  "www.bjnews.com.cn": {
+    "total_urls": 1,
+    "unique_paths": 2,
+    "depth_distribution": {
+      "2": 1
+    },
+    "avg_depth": 2.0
+  },
+  "sports.ifeng.com": {
+    "total_urls": 3,
+    "unique_paths": 4,
+    "depth_distribution": {
+      "2": 3
+    },
+    "avg_depth": 2.0
+  },
+  "hn.ifeng.com": {
+    "total_urls": 3,
+    "unique_paths": 4,
+    "depth_distribution": {
+      "2": 3
+    },
+    "avg_depth": 2.0
+  },
+  "culture.ifeng.com": {
+    "total_urls": 2,
+    "unique_paths": 3,
+    "depth_distribution": {
+      "2": 2
+    },
+    "avg_depth": 2.0
+  },
+  "travel.ifeng.com": {
+    "total_urls": 3,
+    "unique_paths": 4,
+    "depth_distribution": {
+      "2": 3
+    },
+    "avg_depth": 2.0
+  },
+  "tv.ifeng.com": {
+    "total_urls": 1,
+    "unique_paths": 2,
+    "depth_distribution": {
+      "2": 1
+    },
+    "avg_depth": 2.0
+  },
+  "yue.ifeng.com": {
+    "total_urls": 2,
+    "unique_paths": 3,
+    "depth_distribution": {
+      "2": 2
+    },
+    "avg_depth": 2.0
+  },
+  "fashion.ifeng.com": {
+    "total_urls": 2,
+    "unique_paths": 3,
+    "depth_distribution": {
+      "2": 2
+    },
+    "avg_depth": 2.0
+  },
+  "www.huxiu.com": {
+    "total_urls": 1,
+    "unique_paths": 2,
+    "depth_distribution": {
+      "2": 1
+    },
+    "avg_depth": 2.0
+  },
+  "www.ahwang.cn": {
+    "total_urls": 1,
+    "unique_paths": 3,
+    "depth_distribution": {
+      "3": 1
+    },
+    "avg_depth": 3.0
+  },
+  "gs.ifeng.com": {
+    "total_urls": 2,
+    "unique_paths": 3,
+    "depth_distribution": {
+      "2": 2
+    },
+    "avg_depth": 2.0
+  },
+  "qd.ifeng.com": {
+    "total_urls": 3,
+    "unique_paths": 4,
+    "depth_distribution": {
+      "2": 3
+    },
+    "avg_depth": 2.0
+  },
+  "www.yzwb.net": {
+    "total_urls": 1,
+    "unique_paths": 2,
+    "depth_distribution": {
+      "2": 1
+    },
+    "avg_depth": 2.0
+  },
+  "gongyi.ifeng.com": {
+    "total_urls": 2,
+    "unique_paths": 3,
+    "depth_distribution": {
+      "2": 2
+    },
+    "avg_depth": 2.0
+  },
+  "m.usa-gam.com": {
+    "total_urls": 1,
+    "unique_paths": 2,
+    "depth_distribution": {
+      "2": 1
+    },
+    "avg_depth": 2.0
+  },
+  "www.52diyhome.com": {
+    "total_urls": 1,
+    "unique_paths": 3,
+    "depth_distribution": {
+      "3": 1
+    },
+    "avg_depth": 3.0
+  },
+  "travel.163.com": {
+    "total_urls": 1,
+    "unique_paths": 5,
+    "depth_distribution": {
+      "5": 1
+    },
+    "avg_depth": 5.0
+  },
+  "www.fenmiaogroup.com": {
+    "total_urls": 1,
+    "unique_paths": 4,
+    "depth_distribution": {
+      "4": 1
+    },
+    "avg_depth": 4.0
+  },
+  "news.qq.com": {
+    "total_urls": 1,
+    "unique_paths": 3,
+    "depth_distribution": {
+      "3": 1
+    },
+    "avg_depth": 3.0
+  },
+  "information.xnnews.com.cn": {
+    "total_urls": 3,
+    "unique_paths": 4,
+    "depth_distribution": {
+      "3": 3
+    },
+    "avg_depth": 3.0
+  },
+  "www.ctdsb.net": {
+    "total_urls": 1,
+    "unique_paths": 2,
+    "depth_distribution": {
+      "2": 1
+    },
+    "avg_depth": 2.0
+  },
+  "": {
+    "total_urls": 4,
+    "unique_paths": 5,
+    "depth_distribution": {
+      "5": 4
+    },
+    "avg_depth": 5.0
+  },
+  "xunbiaobao.baidu.com": {
+    "total_urls": 1,
+    "unique_paths": 1,
+    "depth_distribution": {
+      "1": 1
+    },
+    "avg_depth": 1.0
+  },
+  "jinnalai.com": {
+    "total_urls": 1,
+    "unique_paths": 2,
+    "depth_distribution": {
+      "2": 1
+    },
+    "avg_depth": 2.0
+  },
+  "cn.wgi888.com": {
+    "total_urls": 1,
+    "unique_paths": 2,
+    "depth_distribution": {
+      "2": 1
+    },
+    "avg_depth": 2.0
+  },
+  "www.yunpv.com": {
+    "total_urls": 1,
+    "unique_paths": 3,
+    "depth_distribution": {
+      "3": 1
+    },
+    "avg_depth": 3.0
+  },
+  "www.laitimes.com": {
+    "total_urls": 3,
+    "unique_paths": 5,
+    "depth_distribution": {
+      "3": 3
+    },
+    "avg_depth": 3.0
+  },
+  "www.bidizhaobiao.com": {
+    "total_urls": 1,
+    "unique_paths": 2,
+    "depth_distribution": {
+      "2": 1
+    },
+    "avg_depth": 2.0
+  },
+  "m.ixigua.com": {
+    "total_urls": 2,
+    "unique_paths": 4,
+    "depth_distribution": {
+      "2": 2
+    },
+    "avg_depth": 2.0
+  },
+  "m.huxiu.com": {
+    "total_urls": 1,
+    "unique_paths": 2,
+    "depth_distribution": {
+      "2": 1
+    },
+    "avg_depth": 2.0
+  },
+  "bbs.my0511.com": {
+    "total_urls": 1,
+    "unique_paths": 1,
+    "depth_distribution": {
+      "1": 1
+    },
+    "avg_depth": 1.0
+  },
+  "www.tvsmo.com": {
+    "total_urls": 1,
+    "unique_paths": 5,
+    "depth_distribution": {
+      "5": 1
+    },
+    "avg_depth": 5.0
+  },
+  "www.sxworker.com": {
+    "total_urls": 2,
+    "unique_paths": 7,
+    "depth_distribution": {
+      "3": 1,
+      "4": 1
+    },
+    "avg_depth": 3.5
+  },
+  "xiangyang.cjyun.org": {
+    "total_urls": 1,
+    "unique_paths": 3,
+    "depth_distribution": {
+      "3": 1
+    },
+    "avg_depth": 3.0
+  },
+  "www.ximalaya.com": {
+    "total_urls": 1,
+    "unique_paths": 2,
+    "depth_distribution": {
+      "2": 1
+    },
+    "avg_depth": 2.0
+  },
+  "cqcb.com": {
+    "total_urls": 1,
+    "unique_paths": 3,
+    "depth_distribution": {
+      "3": 1
+    },
+    "avg_depth": 3.0
+  },
+  "atvnewsonline.com": {
+    "total_urls": 1,
+    "unique_paths": 2,
+    "depth_distribution": {
+      "2": 1
+    },
+    "avg_depth": 2.0
+  },
+  "data.iyiou.com": {
+    "total_urls": 1,
+    "unique_paths": 3,
+    "depth_distribution": {
+      "3": 1
+    },
+    "avg_depth": 3.0
+  },
+  "www.cqcb.com": {
+    "total_urls": 1,
+    "unique_paths": 3,
+    "depth_distribution": {
+      "3": 1
+    },
+    "avg_depth": 3.0
+  },
+  "x.sdcmjs.cn": {
+    "total_urls": 1,
+    "unique_paths": 1,
+    "depth_distribution": {
+      "1": 1
+    },
+    "avg_depth": 1.0
+  },
+  "hlj.sina.com.cn": {
+    "total_urls": 1,
+    "unique_paths": 3,
+    "depth_distribution": {
+      "3": 1
+    },
+    "avg_depth": 3.0
+  }
+}
