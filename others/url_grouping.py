@@ -40,13 +40,18 @@ class URLGrouper:
         """处理单个URL并添加到相应的组中"""
         try:
             domain, path_segments = self._parse_url(url)
-            
+            if url == 'http://qq78.com/\n':
+                print('here')
             # 使用锁确保线程安全
             with self._lock:
                 # 按路径层级存储
                 current_path = ""
                 for segment in path_segments:
                     current_path = f"{current_path}/{segment}"
+                if len(current_path) < 1:
+                    self.unique_paths[domain].add("###")
+                    self.domain_groups[domain]["###"].append(url)
+                else:
                     self.domain_groups[domain][current_path].append(url)
                     self.unique_paths[domain].add(current_path)
                 
@@ -154,7 +159,7 @@ def process_url_batch(urls: List[str], output_dir: str = None) -> Dict:
 
 # 使用示例
 if __name__ == "__main__":
-    with open(r'E:\git_repo\url-analyzer\others\x2.csv', 'r',  errors='replace') as file:
+    with open(r'E:\git_repo\url-analyzer\others\x1.csv', 'r',  errors='replace') as file:
         lines = file.readlines()
 
     sample_urls = lines
